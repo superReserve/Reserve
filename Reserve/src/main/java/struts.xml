@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+
+	<!-- structs默认使用 -->
+	<package name="default" namespace="/" extends="struts-default">
+		<!-- <action name="user" class="com.reserve.struts2.UserAction"> -->
+		<action name="user" class="com.reserve.struts2.UserAction">
+			<result name="login_success">/login_success.jsp</result>
+			<result name="login_failure">/login_failure.jsp</result>
+		</action>
+	</package>
+</struts>    
